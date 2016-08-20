@@ -1,0 +1,53 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "logLevelFilter",
+      "level": "TRACE",
+      "appender": {
+        "type": "file",
+        "filename": "/logs/info/general.log",
+        "category": "trace",
+        "maxLogSize": 20480,
+        "backups": 10
+      }
+    },
+    {
+      "type": "logLevelFilter",
+      "level": "WARN",
+      "appender": {
+        "type": "file",
+        "filename": "logs/warn/general.log",
+        "category": "warn",
+        "maxLogSize": 20480,
+        "backups": 10
+      }
+    },
+    {
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": {
+        "type": "file",
+        "filename": "logs/error/general.log",
+        "category": "error",
+        "maxLogSize": 20480,
+        "backups": 10
+      }
+    },
+    {
+      "type": "logLevelFilter",
+      "level": "FATAL",
+      "appender": {
+        "type": "file",
+        "filename": "logs/fatal/general.log",
+        "category": "fatal",
+        "maxLogSize": 20480,
+        "backups": 10
+      }
+    }
+  ],
+  "replaceConsole": true,
+  "reloadSecs": 300
+}

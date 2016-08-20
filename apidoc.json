@@ -1,0 +1,11 @@
+{
+  "name": "Auth",
+  "version": "1.0.0",
+  "title": "Auth api documentation",
+  "url": "/auth",
+  "template": {
+    "withCompare": true,
+    "withGenerator": false
+  },
+  "order": []
+}

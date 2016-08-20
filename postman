@@ -1,0 +1,165 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Express-Boilerplate",
+		"_postman_id": "caf2b0a7-4308-021d-ce58-832a89f78065",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Unauthorized echo",
+			"request": {
+				"url": "{{url}}/auth/echo",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authorized echo",
+			"request": {
+				"url": "{{url}}/auth/echo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.MTQ2NzcxMDcyNzYwNQ.9w0crzXvRkVVGKqPKEng-lJTxqLcZAxbxwea7yBq_ng",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authorized echo error example",
+			"request": {
+				"url": "{{url}}/auth/echo?error=true",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.MTQ2NzcxMDcyNzYwNQ.9w0crzXvRkVVGKqPKEng-lJTxqLcZAxbxwea7yBq_ng",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register user",
+			"request": {
+				"url": "{{url}}/auth/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"vladimirlevinozinki@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "{{url}}/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"vladimirlevinozinki@gmail.com\",\n    \"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"url": "{{url}}/auth/logout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.MTQ2NzcxMDcyNzYwNQ.9w0crzXvRkVVGKqPKEng-lJTxqLcZAxbxwea7yBq_ng",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot password",
+			"request": {
+				"url": "{{url}}/auth/password?email=vladimirlevinozinki@gmail.com",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.MTQ2NzcxMTMwMTcwOQ.c_3f5IVc-n2HVqfM1cfoaUILn3Ro-50xV7GFh74uihw",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset password",
+			"request": {
+				"url": "{{url}}/auth/password",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\":\"WHTmPgWU9urPiN4cHWb6LBmjV7e2fm3D\",\n    \"password\":\"12345\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

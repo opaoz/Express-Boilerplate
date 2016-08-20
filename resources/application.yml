@@ -1,0 +1,34 @@
+# Application info
+app:
+  name: Express-Boilerplate
+  version: 1.0.0
+  description:  Boilrplate for easy express start. Include auth server with token-based authorization
+  secret: 8A78165E927AE738893822E4816F9
+  url:
+   base: http://127.0.0.1:3000
+   resetPass: resetPassword
+
+# Server configuration
+server:
+  port: 3000
+
+# Db configuration
+mongoose:
+  uri: mongodb://localhost:27017/test
+
+# Mail configuration
+mail:
+   from: no-reply@site.com
+   host: smtp.gmail.com
+   secureConnection: true
+   port: 465
+   transportMethod: SMTP
+   auth:
+     user: <your email>
+     pass: <your pass>
+
+# Localization configuration
+i18n:
+  default: en
+  supported:
+    - en

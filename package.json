@@ -1,0 +1,45 @@
+{
+  "name": "Express-Boilerplate",
+  "description": "Boilrplate for easy express start. Include auth server with token-based authorization",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha --reporter mochawesome --reporter-options reportDir=public/tests api/modules/**/test/**/*.js"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.13.2",
+    "debug": "~2.2.0",
+    "ejs": "^2.4.1",
+    "enum": "latest",
+    "express": "~4.13.1",
+    "express-bearer-token": "latest",
+    "express-mailer": "latest",
+    "express-session": "^1.14.0",
+    "i18n": "^0.8.1",
+    "jsonwebtoken": "^5.7.0",
+    "lodash": "^4.13.1",
+    "log4js": "latest",
+    "mongoose": "latest",
+    "mongoose-autopopulate": "latest",
+    "mongoose-id-validator": "^0.3.0",
+    "mongoose-unique-validator": "latest",
+    "multiparty": "latest",
+    "passport": "^0.3.2",
+    "passport-http-bearer": "^1.0.1",
+    "randomstring": "^1.1.5",
+    "require-alias": "^1.0.5",
+    "underscore": "latest",
+    "uuid": "^2.0.2",
+    "yamljs": "latest"
+  },
+  "engine": "node 0.12.7",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "mochawesome": "^1.3.5",
+    "should": "^9.0.2",
+    "supertest": "^1.2.0"
+  }
+}

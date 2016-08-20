@@ -1,5 +1,4 @@
 # Logs
-logs
 *.log
 npm-debug.log*
 
@@ -35,3 +34,7 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+.DS_Store
+._.DS_Store
+.gitignore
+.idea/
